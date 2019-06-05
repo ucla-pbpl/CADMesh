@@ -54,7 +54,7 @@ endif()
 
 # Open Asset Importer Library
 option(WITH_SYS_ASSIMP "WITH_SYS_ASSIMP" OFF)
-set(WITH_SYS_ASSIMP_GIT_TAG "v5.0.0.rc1" CACHE STRING
+set(WITH_SYS_ASSIMP_GIT_TAG "master" CACHE STRING
     "GitHub release tag to use if WITH_SYS_ASSIMP=OFF")
 if(${WITH_SYS_ASSIMP} MATCHES "ON")
     find_package(assimp)
