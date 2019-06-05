@@ -47,7 +47,7 @@ std::shared_ptr<Mesh> Reader::GetMesh(size_t index)
 }
 
 
-std::shared_ptr<Mesh> Reader::GetMesh(G4String /*name*/)
+std::shared_ptr<Mesh> Reader::GetMesh(G4String name)
 {
     for (unsigned i=0; i<meshes_.size(); ++i) {
         if (meshes_[i]->GetName() == name)
