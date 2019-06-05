@@ -83,7 +83,7 @@ G4TessellatedSolid* TessellatedMesh::GetTessellatedSolid(G4int index)
 
 G4TessellatedSolid* TessellatedMesh::GetTessellatedSolid(G4String /*name*/)
 {
-    // TODO: Get the tesselated solid by name.
+    auto mesh = reader_->GetMesh(name);
 
     return nullptr;
 }
