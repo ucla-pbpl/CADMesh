@@ -85,7 +85,7 @@ G4TessellatedSolid* TessellatedMesh::GetTessellatedSolid(G4String name)
 {
     auto mesh = reader_->GetMesh(name);
 
-    return nullptr;
+    return GetTessellatedSolid(mesh);
 }
 
 
